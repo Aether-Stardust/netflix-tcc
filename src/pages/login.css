@@ -1,15 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.login-container{
-
+.login-container {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -18,7 +17,7 @@ body{
     padding: 20px;
 }
 
-.login-card{
+.login-card {
     width: 100%;
     max-width: 380px;
     padding: 35px;
@@ -30,34 +29,38 @@ body{
     box-shadow: 0 10px 35px rgb(128, 0, 255);
 }
 
-.login-card h1{
+.login-card h1 {
     color: rgb(128, 0, 255);
     text-align: center;
 }
 
-.login-card p{
+.login-card p {
     color: rgb(181, 138, 224);
     text-align: center;
     margin-bottom: 12px;
 }
 
-.login-card label{
+.login-card label {
     font-weight: bold;
     color: rgb(128, 0, 255);
 }
 
-.login-card input{
+.login-card input {
     width: 100%;
     padding: 12px;
     border: none;
     color: rgb(128, 0, 255);
     border-radius: 8px;
     font-size: 15px;
-    background-color: rgba(128, 0, 255, 0.095) ;
-    
+    background-color: rgba(128, 0, 255, 0.095);
 }
 
-.login-card button{
+.login-card input::placeholder {
+    color: rgb(181, 138, 224); 
+    opacity: 1; 
+}
+
+.login-card button {
     margin-top: 10px;
     padding: 13px;
     border: none;
@@ -65,17 +68,17 @@ body{
     background: rgba(128, 0, 255, 0.095);
     color: rgb(128, 0, 255);
     font-size: 16px;
-    font-weight:bold;
+    font-weight: bold;
     cursor: pointer;
 }
 
 .login-card input:focus {
-  outline: 2px solid ;
-  border-color: transparent;
+    outline: 2px solid rgb(128, 0, 255);
+    border-color: transparent;
 }
 
 .login-card button:hover {
-  background: rgba(171, 87, 255, 0.274) ;
+    background: rgba(171, 87, 255, 0.274);
 }
 
 .login-card a {
@@ -84,9 +87,9 @@ body{
 }
 
 .login-card .auth-switch {
-  text-align: center;
+    text-align: center;
     color: rgb(181, 138, 224);
-  margin-top: 5px;
+    margin-top: 5px;
 }
 
 .login-card .auth-error {
